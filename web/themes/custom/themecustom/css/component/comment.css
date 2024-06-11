@@ -1,0 +1,40 @@
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.avt-comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.my-4 {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.ms-4 {
+    margin-left: 4px;
+}
+
+.bg-dark {}
+
+#block-themecustom-views-block-status-block-1-2 .views-row {
+    color: white;
+    padding: 10px;
+
+}
+
+#block-themecustom-views-block-status-block-1-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-comment {
+    padding: 0 4px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+}

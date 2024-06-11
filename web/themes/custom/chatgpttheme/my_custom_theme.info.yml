@@ -1,0 +1,12 @@
+name: 'My Custom Theme'
+type: theme
+description: 'A custom theme with CSS and JS'
+core_version_requirement: ^8 || ^10
+base theme: stable9
+libraries:
+  - my_custom_theme/global-styling
+  - my_custom_theme/global-scripts
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.ajax({
+                    url: "http://localhost:5000/product",
+                    success: function (result) {
+                        console.log(result);
+                        const listItems = result.map(item => {
+                            return `
+                            <div class="item">
+                                 <img src=${item.image} alt="">
+                                <p>${item.name}</p>
+                                <p>${item.price}</p>
+                                </div>
+                            `
+                        })
+                        $("#div1").append(listItems)
+
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error: ", error);
+                        $("#div1").html("<p>Sorry, an error occurred while fetching data.</p>");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body class="container">
+
+    <div id="div1" class="d-flex flex-wrap">
+
+    </div>
+
+    <button>Get External Content</button>
+
+</body>
+
+<style>
+    .item {
+        width: calc(20% - 40px);
+        margin: 0 20px;
+    }
+
+    .item img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+        #div1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            width: 100%;
+
+        }
+    }
+</style>
+
+</html>

@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header,
+main,
+footer {
+    padding: 1em;
+    margin: 1em auto;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        padding: 0.5em;
+        margin: 0.5em auto;
+    }
+}

@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    ;
+}
+
+body {
+    font-family: "Noto Sans", "Tiny5", sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+
+.layout-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}

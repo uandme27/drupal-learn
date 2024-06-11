@@ -1,0 +1,35 @@
+/* .view-content {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.views-row {
+    width: 20%;
+} */
+
+#block-themecustom-views-block-product-view-block-1 .view-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#block-themecustom-views-block-product-view-block-1 .views-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+}
+
+#block-themecustom-views-block-product-view-block-1 .views-row:hover {
+    cursor: pointer;
+    border: 1px rgb(255, 111, 111) solid;
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+}
+
+.views-field-field-image-product {
+    width: 90%;
+    height: 90%;
+}

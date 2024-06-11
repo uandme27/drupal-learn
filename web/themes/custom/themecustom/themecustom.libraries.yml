@@ -1,0 +1,17 @@
+global-css:
+  css:
+    theme:
+      css/styles.css: {}
+    component:
+      css/component/product.css: {}
+      css/component/header.css: {}
+      css/component/content.css: {}
+      css/component/comment.css: {}
+fonts:
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Tiny5: {type: external}
+      //fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap" rel="stylesheet": {type: external}
+js:
+  js:
+    js/a.js: {}

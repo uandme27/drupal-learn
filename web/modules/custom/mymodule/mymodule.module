@@ -1,0 +1,18 @@
+<?php
+use Drupal\Core\CronInterface;
+
+/**
+ * Implements hook_cron().
+ */
+function yourmodule_cron() {
+  // Thêm một công việc cron bằng cách gọi một service.
+  \Drupal::service('cron')->add('mymodule_cron');
+}
+
+/**
+ * A sample cron job.
+ */
+function mymodule_cron() {
+  // In ra chuỗi "hello" khi công việc cron chạy.
+  \Drupal::messenger()->addMessage(t('hello'));
+}

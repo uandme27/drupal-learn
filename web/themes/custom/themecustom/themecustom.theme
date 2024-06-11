@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function themecustom_preprocess_page(array &$variables) {
+  // Thêm biến custom_message vào biến $variables
+  $variables['custom_message'] = t('Welcome to my custom site!');
+}
